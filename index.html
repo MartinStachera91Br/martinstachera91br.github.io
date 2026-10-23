@@ -1,0 +1,583 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Martin Stachera · Paid Media & Growth Portfolio</title>
+<meta name="description" content="Growth marketer specialized in paid media and media buying: Google Ads, Meta Ads and LinkedIn Ads results, plus the AI and data systems I build.">
+<meta property="og:title" content="Martin Stachera · Paid Media & Growth Portfolio">
+<meta property="og:description" content="Paid media results and AI & data projects from 15 years in digital marketing.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://martinstachera91br.github.io/">
+<meta property="og:image" content="https://martinstachera91br.github.io/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Martin Stachera, Growth Marketer specialized in paid media and media buying">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://martinstachera91br.github.io/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23E8590C'/%3E%3Ctext x='32' y='43' font-family='Arial' font-size='28' font-weight='700' text-anchor='middle' fill='white'%3EMS%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #FAFAF7;
+  --surface: #FFFFFF;
+  --surface-2: #F3F2EE;
+  --text: #17171A;
+  --muted: #5F6168;
+  --border: #E6E4DE;
+  --mkt: #D9480F;
+  --mkt-soft: #FFF1E8;
+  --ai: #4F46E5;
+  --ai-soft: #EEEEFF;
+  --ok: #2F855A;
+  --ok-soft: #E8F5EC;
+  --warn: #A16207;
+  --warn-soft: #FEF6E0;
+  --shadow: 0 1px 2px rgba(20, 20, 30, .05), 0 4px 16px rgba(20, 20, 30, .04);
+  --radius: 14px;
+  --mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  --sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0F1012;
+    --surface: #17181C;
+    --surface-2: #1E2025;
+    --text: #ECECEE;
+    --muted: #A0A3AB;
+    --border: #2A2C31;
+    --mkt: #FF8A4C;
+    --mkt-soft: #2A1A12;
+    --ai: #9B9CFA;
+    --ai-soft: #1C1C33;
+    --ok: #6FCF97;
+    --ok-soft: #13261B;
+    --warn: #F2C94C;
+    --warn-soft: #2A2410;
+    --shadow: none;
+  }
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 72px; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--sans);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: inherit; }
+.wrap { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
+
+/* Nav */
+header.nav {
+  position: sticky; top: 0; z-index: 10;
+  background: color-mix(in srgb, var(--bg) 88%, transparent);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
+}
+header.nav .wrap { display: flex; align-items: center; justify-content: space-between; height: 60px; gap: 16px; }
+.brand { font-weight: 800; letter-spacing: -.01em; text-decoration: none; white-space: nowrap; }
+.brand span { color: var(--mkt); }
+nav.links { display: flex; gap: 22px; font-size: 14px; font-weight: 500; }
+nav.links a { text-decoration: none; color: var(--muted); }
+nav.links a:hover { color: var(--text); }
+
+/* Hero */
+.hero { padding: 72px 0 56px; display: grid; grid-template-columns: 1.25fr 1fr; gap: 48px; align-items: center; }
+.eyebrow { font-family: var(--mono); font-size: 12.5px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin: 0 0 14px; }
+h1 { font-size: clamp(38px, 5.4vw, 60px); line-height: 1.04; letter-spacing: -.03em; margin: 0 0 18px; font-weight: 800; }
+h1 .accent-m { color: var(--mkt); }
+h1 .accent-a { color: var(--ai); }
+.lede { font-size: 18px; color: var(--muted); margin: 0 0 26px; max-width: 34em; }
+.lede strong { color: var(--text); font-weight: 600; }
+.cta { display: flex; flex-wrap: wrap; gap: 10px; }
+.btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 10px 16px; border-radius: 10px; font-weight: 600; font-size: 14.5px;
+  text-decoration: none; border: 1px solid var(--border); background: var(--surface);
+}
+.btn.primary { background: var(--text); color: var(--bg); border-color: var(--text); }
+.btn:hover { transform: translateY(-1px); }
+.btn svg { width: 16px; height: 16px; }
+.where { margin-top: 18px; font-size: 14px; color: var(--muted); }
+
+.stats { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.stat { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 18px; box-shadow: var(--shadow); }
+.stat b { display: block; font-size: 28px; line-height: 1.1; letter-spacing: -.02em; font-weight: 800; }
+.stat span { display: block; font-size: 13.5px; color: var(--muted); margin-top: 6px; line-height: 1.4; }
+
+/* Sections */
+section.block { padding: 56px 0 24px; border-top: 1px solid var(--border); }
+.section-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; flex-wrap: wrap; margin-bottom: 28px; }
+.section-head h2 { font-size: clamp(28px, 3.4vw, 38px); letter-spacing: -.02em; margin: 0; line-height: 1.1; }
+.section-head .num { font-family: var(--mono); font-size: 13px; display: block; margin-bottom: 8px; }
+#marketing .num { color: var(--mkt); }
+#ai .num { color: var(--ai); }
+.section-head p { margin: 0; color: var(--muted); max-width: 36em; font-size: 15.5px; }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 16px; }
+
+/* Cards */
+.card {
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 22px 22px 18px; box-shadow: var(--shadow);
+  display: flex; flex-direction: column; gap: 10px; position: relative;
+}
+.card::before { content: ""; position: absolute; left: 0; top: 18px; bottom: 18px; width: 3px; border-radius: 0 3px 3px 0; }
+#marketing .card::before { background: var(--mkt); }
+#ai .card::before { background: var(--ai); }
+.meta { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; font-size: 13px; color: var(--muted); }
+.meta .org { font-weight: 700; color: var(--text); font-size: 15px; }
+.badge { font-family: var(--mono); font-size: 11px; padding: 2px 8px; border-radius: 999px; letter-spacing: .02em; white-space: nowrap; }
+.badge.live { background: var(--ok-soft); color: var(--ok); }
+.badge.soon { background: var(--warn-soft); color: var(--warn); }
+.badge.wip { background: var(--surface-2); color: var(--muted); }
+.badge.repo { background: var(--ai-soft); color: var(--ai); text-decoration: none; }
+.badge.repo:hover { text-decoration: underline; }
+.metric { font-size: 22px; font-weight: 800; line-height: 1.2; letter-spacing: -.015em; margin: 2px 0 0; }
+#marketing .metric { color: var(--mkt); }
+#ai .metric { color: var(--ai); }
+.metric-sub { margin: -4px 0 0; font-weight: 600; font-size: 14.5px; }
+.desc { margin: 0; color: var(--muted); font-size: 15px; }
+.desc strong { color: var(--text); font-weight: 600; }
+.placeholder {
+  border: 1.5px dashed var(--border); border-radius: 10px; padding: 8px 12px;
+  font-family: var(--mono); font-size: 13px; color: var(--muted); background: var(--surface-2);
+}
+details { border-top: 1px dashed var(--border); padding-top: 8px; }
+summary { cursor: pointer; font-size: 13.5px; font-weight: 600; list-style: none; display: inline-flex; align-items: center; gap: 6px; }
+summary::-webkit-details-marker { display: none; }
+summary::before { content: "+"; font-family: var(--mono); display: inline-block; width: 14px; }
+details[open] summary::before { content: "−"; }
+details ul { margin: 8px 0 2px; padding-left: 18px; font-size: 14.5px; color: var(--muted); }
+details li { margin: 5px 0; }
+details li strong { color: var(--text); font-weight: 600; }
+.tags { list-style: none; display: flex; flex-wrap: wrap; gap: 6px; padding: 0; margin: auto 0 0; padding-top: 6px; }
+.tags li { font-family: var(--mono); font-size: 11.5px; padding: 3px 8px; border-radius: 6px; background: var(--surface-2); color: var(--muted); }
+.note { font-size: 13px; color: var(--muted); margin: 18px 0 0; }
+
+/* Skills */
+#skills .num { color: var(--mkt); }
+.skills { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 12px; }
+.skill-group { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px 18px; box-shadow: var(--shadow); }
+.skill-group h3 { font-family: var(--mono); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); margin: 0 0 10px; font-weight: 500; }
+.chips { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 6px; }
+.chips li { font-size: 13px; line-height: 1.35; padding: 5px 10px; border-radius: 999px; background: var(--mkt-soft); color: var(--text); }
+
+/* Also */
+.also { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; margin-top: 8px; }
+.also a {
+  display: block; text-decoration: none; padding: 16px 18px; border-radius: var(--radius);
+  border: 1px solid var(--border); background: var(--surface);
+}
+.also a b { display: block; font-size: 15px; }
+.also a span { display: block; font-size: 13.5px; color: var(--muted); margin-top: 2px; }
+.also a:hover { border-color: var(--muted); }
+
+/* Contact */
+.contact { padding: 64px 0 72px; border-top: 1px solid var(--border); text-align: center; }
+.contact h2 { font-size: clamp(28px, 3.4vw, 38px); margin: 0 0 10px; letter-spacing: -.02em; }
+.contact p { color: var(--muted); margin: 0 auto 24px; max-width: 32em; }
+.contact .cta { justify-content: center; }
+footer { border-top: 1px solid var(--border); padding: 22px 0 30px; font-size: 13px; color: var(--muted); }
+footer .wrap { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+
+@media (max-width: 860px) {
+  .hero { grid-template-columns: 1fr; padding: 48px 0 40px; gap: 32px; }
+  nav.links { gap: 14px; }
+}
+@media (max-width: 560px) {
+  .wrap { padding: 0 16px; }
+  nav.links a.hide-sm { display: none; }
+  .grid { grid-template-columns: 1fr; }
+  .stat b { font-size: 24px; }
+  .lede { font-size: 16.5px; }
+}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top">Martin Stachera<span>.</span></a>
+    <nav class="links">
+      <a href="#marketing">Results</a>
+      <a href="#skills" class="hide-sm">Skills</a>
+      <a href="#ai">AI &amp; Data</a>
+      <a href="#contact" class="hide-sm">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top" class="wrap">
+
+  <section class="hero">
+    <div>
+      <p class="eyebrow">Growth Marketer · Paid Media &amp; Media Buying</p>
+      <h1>I buy media that turns into <span class="accent-m">revenue</span>, and build the <span class="accent-a">data systems</span> that prove it.</h1>
+      <p class="lede">15 years in digital marketing, most of them in <strong>paid media across Google Ads, Meta Ads and LinkedIn Ads</strong> for B2B and B2C companies: in-house, as a consultant and across 37 companies at my own agency. I own budgets, bidding, conversion tracking and testing end to end, and I report results in <strong>CPL, CAC, ROAS, revenue and LTV</strong>, not clicks.</p>
+      <div class="cta">
+        <a class="btn primary" href="https://www.linkedin.com/in/martin-stachera-growth-marketer" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+          LinkedIn
+        </a>
+        <a class="btn" href="mailto:martin.neto91@gmail.com">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+          Email
+        </a>
+        <a class="btn" href="https://github.com/MartinStachera91Br" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.2.8.8 1.2 1.9 1.2 3.1 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1.1.9 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3"/></svg>
+          GitHub
+        </a>
+      </div>
+      <p class="where">Based in Curitiba, Brazil · Remote, available for US business hours · Full professional English</p>
+    </div>
+    <div class="stats" aria-label="Highlights">
+      <div class="stat"><b>~US$400K</b><span>in paid media managed at the same time across client and consulting accounts</span></div>
+      <div class="stat"><b>37 companies</b><span>served through my agency, with a team of media buyers I hired and led</span></div>
+      <div class="stat"><b>−49% CPL</b><span>and 3x qualified leads from Google Search for a B2B client</span></div>
+      <div class="stat"><b>R$1M → R$7M</b><span>revenue in two years with ~R$1.5M in Google Ads and Meta Ads</span></div>
+    </div>
+  </section>
+
+  <!-- ===================== SKILLS ===================== -->
+  <section class="block" id="skills">
+    <div class="section-head">
+      <div>
+        <span class="num">00 /</span>
+        <h2>What I bring to a paid media team</h2>
+      </div>
+      <p>The skills paid media roles ask for most, limited to what I've done hands-on.</p>
+    </div>
+    <div class="skills">
+      <div class="skill-group"><h3>Channels</h3><ul class="chips">
+        <li>Google Ads: Search, Performance Max, Shopping, Display, YouTube</li><li>Google Local Services Ads</li><li>Meta Ads, incl. lead forms</li><li>LinkedIn Ads</li>
+      </ul></div>
+      <div class="skill-group"><h3>Media buying</h3><ul class="chips">
+        <li>Budget management &amp; pacing</li><li>Smart Bidding &amp; Meta bid controls</li><li>Campaign QA</li><li>Scaling spend</li><li>Multi-account management</li><li>Location-level campaigns</li>
+      </ul></div>
+      <div class="skill-group"><h3>Measurement</h3><ul class="chips">
+        <li>Conversion tracking: GTM, Meta Pixel + CAPI, UTMs</li><li>Multi-touch attribution</li><li>GA4</li><li>PostHog</li><li>Looker Studio</li><li>SQL &amp; Python dashboards</li>
+      </ul></div>
+      <div class="skill-group"><h3>Testing &amp; growth</h3><ul class="chips">
+        <li>A/B testing (HADI, ICE)</li><li>Creative testing</li><li>Landing pages &amp; CRO</li><li>Lead quality &amp; MQL criteria</li><li>CPL, CAC, ROAS, LTV</li><li>P&amp;L-based budget setting</li>
+      </ul></div>
+      <div class="skill-group"><h3>Clients &amp; team</h3><ul class="chips">
+        <li>Client reporting &amp; presenting results</li><li>US clients &amp; stakeholders</li><li>Team leadership</li><li>Mentoring media buyers</li><li>KPIs &amp; performance reviews</li><li>CRM &amp; lead routing</li>
+      </ul></div>
+      <div class="skill-group"><h3>AI in the workflow</h3><ul class="chips">
+        <li>LLM APIs (GPT-4o, Gemini, Claude)</li><li>AI agents &amp; MCP</li><li>Make, Zapier, n8n</li><li>Python</li>
+      </ul></div>
+    </div>
+  </section>
+
+  <!-- ===================== 1. RESULTS ===================== -->
+  <section class="block" id="marketing">
+    <div class="section-head">
+      <div>
+        <span class="num">01 /</span>
+        <h2>Paid Media &amp; Marketing Results</h2>
+      </div>
+      <p>Accounts I owned or led, in-house, as a consultant and through my agency. Open any card to see how it was done.</p>
+    </div>
+
+    <div class="grid">
+
+      <article class="card">
+        <div class="meta"><span class="org">Genna AI</span><span>US-based AI startup · US &amp; Brazilian audiences · 2025 to now</span></div>
+        <p class="metric">Break-even in 3 of its first 14 months</p>
+        <p class="metric-sub">Meta Ads targeting the US market, plus Brazil</p>
+        <p class="desc">I run growth for a US-based AI startup built for Instagram content creation, <strong>buying Meta Ads for US and Brazilian audiences</strong>, from acquisition to retention. The company reached break-even in 3 of its first 14 months, during product-market fit.</p>
+        <details><summary>How</summary><ul>
+          <li>Run Meta Ads for US and Brazilian audiences, including AI-generated video ads made with Google Flow.</li>
+          <li>Set up multi-touch attribution in GA4 and PostHog (last-click, first-click, time-decay) to connect spend to activation and revenue.</li>
+          <li>Built the organic strategy that took the brand from <strong>zero to 51k+ Instagram followers</strong>.</li>
+          <li>Report to the founders and partner with the dev team on product features from growth insights.</li>
+        </ul></details>
+        <ul class="tags"><li>US market</li><li>Meta Ads</li><li>Attribution</li><li>AI video ads</li></ul>
+      </article>
+
+      <article class="card">
+        <div class="meta"><span class="org">Mamão com Anúncio</span><span>My paid media agency · 2020 to 2025</span></div>
+        <p class="metric">37 companies, 9-person team</p>
+        <p class="metric-sub">Clients stayed twice as long; agency sold to two former employees</p>
+        <p class="desc">I founded and ran a remote agency with millions in annual media spend across education, health, construction and food &amp; beverage, running <strong>Google Ads and Meta Ads for many client accounts at once</strong>.</p>
+        <details><summary>How</summary><ul>
+          <li><strong>Led the media buyers:</strong> assigned client accounts, set KPIs, ran performance reviews, hired by workload and mentored buyers from junior to senior.</li>
+          <li>Reviewed each client's P&amp;L, LTV and CAC before setting ad budgets, then ran budget pacing and pre-launch campaign QA.</li>
+          <li>Kept a daily written log on every ad account, with the reason behind each change.</li>
+          <li>Ran client onboarding calls, monthly performance reviews and weekly updates.</li>
+          <li>Set up GA4 and Google Tag Manager tracking on every client account; built lead scoring and automated sales follow-ups in the CRM.</li>
+          <li>Sasq, another agency, merged into Mamão com Anúncio.</li>
+        </ul></details>
+        <ul class="tags"><li>Multi-account</li><li>Team leadership</li><li>Client reporting</li><li>Budget pacing</li><li>GTM</li></ul>
+      </article>
+
+      <article class="card">
+        <div class="meta"><span class="org">Total Telas</span><span>B2B · civil construction · via my agency</span></div>
+        <p class="metric">−49% cost per lead, 3x qualified leads</p>
+        <p class="metric-sub">Plus a new message that nearly doubled ad revenue</p>
+        <p class="desc">Semantic analysis and keyword optimization on <strong>Google Search</strong> cut CPL by 49% while tripling MQLs.</p>
+        <details><summary>How</summary><ul>
+          <li>Changed the core ad and landing page message from "The Best Fences in Brazil" to <strong>"5 Years Near the Sea Without Rusting"</strong>. Ad-driven revenue nearly doubled with the same investment.</li>
+          <li>Defined the ICP and routed Google Ads leads straight to sales reps in OctaDesk.</li>
+        </ul></details>
+        <ul class="tags"><li>Google Ads</li><li>Keyword strategy</li><li>CPL</li><li>Lead quality</li><li>Lead routing</li></ul>
+      </article>
+
+      <article class="card">
+        <div class="meta"><span class="org">Gaya</span><span>World-award-winning spa · via my agency</span></div>
+        <p class="metric">−62% CAC on Google Ads in month one</p>
+        <p class="metric-sub">−17% CAC on Meta Ads in the same period</p>
+        <p class="desc">Google Ads was the spa's main acquisition channel. Both results came in the first month I owned the accounts, reported by the founder and tracked by their systems.</p>
+        <details><summary>How</summary><ul>
+          <li>Took over Google Ads and Meta Ads and tracked booked appointments, not just leads.</li>
+          <li>Implemented CRM and marketing automation in RD Station to raise lead quality and align acquisition with sales.</li>
+        </ul></details>
+        <ul class="tags"><li>Google Ads</li><li>Meta Ads</li><li>CAC</li><li>Booked appointments</li><li>CRM</li></ul>
+      </article>
+
+      <article class="card">
+        <div class="meta"><span class="org">Lifecare</span><span>Largest aesthetic clinic in Rio de Janeiro · via my agency</span></div>
+        <p class="metric">ROAS 2.9x → 6.4x, year over year</p>
+        <p class="metric-sub">Feb 2025 vs Feb 2024: 57% less ad spend, almost the same revenue</p>
+        <p class="desc">Ads generated <strong>R$241K in revenue from January to April 2024</strong>, including R$83K at 6x ROAS in January alone (revenue attributed to ads).</p>
+        <details><summary>How</summary><ul>
+          <li>Ran Google Ads and Meta Ads and tracked booked appointments, not just leads.</li>
+          <li>Implemented RD Station CRM and defined MQL criteria, so only qualified leads from paid campaigns reached the sales team.</li>
+        </ul></details>
+        <ul class="tags"><li>ROAS</li><li>Google Ads</li><li>Meta Ads</li><li>MQL criteria</li><li>CRM</li></ul>
+      </article>
+
+      <article class="card">
+        <div class="meta"><span class="org">4blue</span><span>B2B financial consulting &amp; fintech · 2017 to 2019</span></div>
+        <p class="metric">R$1M → R$7M revenue in two years</p>
+        <p class="metric-sub">−21% CPL while scaling ~R$1.5M in Google Ads and Meta Ads</p>
+        <p class="desc">I owned full-funnel growth for a B2B financial consultancy and its finance-management SaaS. Revenue went from R$1M to R$3M in year one and to R$7M in year two.</p>
+        <details><summary>How</summary><ul>
+          <li>Scaled paid media while cutting cost per lead by 21%.</li>
+          <li>Launched full cold-traffic webinar campaigns in <strong>10 days</strong>: ads, landing page, emails, live event and follow-up.</li>
+          <li>Ran A/B tests with HADI cycles and ICE scoring across acquisition, landing pages and ad creative.</li>
+        </ul></details>
+        <ul class="tags"><li>B2B</li><li>Scaling spend</li><li>CPL</li><li>A/B testing</li><li>Landing pages</li></ul>
+      </article>
+
+      <article class="card">
+        <div class="meta"><span class="org">Ben Zruel</span><span>Personal finance education · 2022 to 2025</span></div>
+        <p class="metric">Revenue 82.9% above the previous peak</p>
+        <p class="metric-sub">3.2x ROAS on a course launch</p>
+        <p class="desc">Revenue had been falling 9% a month for six months when I took over growth. The slide stopped within the first few months, and after one year revenue hit an all-time high.</p>
+        <details><summary>How</summary><ul>
+          <li>Ran online events with cold-traffic ads on Google and Meta, plus organic content and email.</li>
+          <li><strong>Restructured the marketing team:</strong> took over 5 people, exited 2, and rebuilt it into 8 specialists, including a dedicated paid media specialist.</li>
+          <li>Built the RevOps setup for inbound sales on WhatsApp and Instagram, with peak-demand routing during live events.</li>
+          <li>Added ~35k Instagram followers and ~20k YouTube subscribers in the same period.</li>
+        </ul></details>
+        <ul class="tags"><li>ROAS</li><li>Cold traffic</li><li>Team leadership</li><li>Launches</li><li>RevOps</li></ul>
+      </article>
+
+      <article class="card">
+        <div class="meta"><span class="org">Janela Bar</span><span>Bar franchise · via my agency</span></div>
+        <p class="metric">~50% lower CAC while the ad budget tripled</p>
+        <p class="metric-sub">A turnaround that stayed a client for 2+ years</p>
+        <p class="desc">I was hired right after the franchise was sold for lack of profitability. CAC fell about 50% while the monthly ad budget went from R$1,500 to R$4,500.</p>
+        <ul class="tags"><li>CAC</li><li>Scaling spend</li><li>Google Ads</li><li>Meta Ads</li></ul>
+      </article>
+
+      <article class="card">
+        <div class="meta"><span class="org">CursoBeta</span><span>Education · via my agency</span></div>
+        <p class="metric">25,000+ enrollments a year</p>
+        <p class="metric-sub">R$3M+ in annual revenue</p>
+        <p class="desc">I built the school's webinar acquisition funnel from zero, driven by Google Ads and Meta Ads, and it's still the backbone of its growth. Numbers reported by the founder.</p>
+        <details><summary>How</summary><ul>
+          <li>Designed and ran the full webinar acquisition strategy.</li>
+          <li>Tracked LTV alongside CAC to decide where budget should go.</li>
+        </ul></details>
+        <ul class="tags"><li>Webinar funnel</li><li>Google Ads</li><li>Meta Ads</li><li>LTV/CAC</li></ul>
+      </article>
+
+      <article class="card">
+        <div class="meta"><span class="org">CRCP</span><span>Plastic surgery center · via my agency</span></div>
+        <p class="metric">4x Instagram reach in 30 days</p>
+        <p class="metric-sub">With no added investment</p>
+        <p class="desc">Center led by Dr. Alexandre Charão, one of Brazil's most renowned plastic surgeons, featured in The New York Times. The commercial team also reported better lead quality.</p>
+        <ul class="tags"><li>Meta Ads</li><li>Lead quality</li><li>Health</li></ul>
+      </article>
+
+      <article class="card">
+        <div class="meta"><span class="org">eSports Institute</span><span>Community &amp; content · 2019 to 2020</span></div>
+        <p class="metric">Zero to five-figure revenue in one week</p>
+        <p class="metric-sub">No website, no paid ads</p>
+        <p class="desc">Influencer marketing plus community-led growth on Twitch and YouTube, reaching ~6,300 Twitch followers and ~15,000 YouTube subscribers.</p>
+        <details><summary>Press &amp; case study</summary><ul>
+          <li><a href="https://www.espn.com.br/esports/artigo/_/id/6364245/intergalaxy-tigers-clube-que-nasceu-com-dna-social-e-quer-ser-o-parana-no-circuitao" target="_blank" rel="noopener">Featured by ESPN Brasil</a></li>
+          <li><a href="https://www.youtube.com/watch?v=YWIUKZpJ5FE" target="_blank" rel="noopener">The project became a case study with 40k+ views on YouTube</a></li>
+        </ul></details>
+        <ul class="tags"><li>Influencer marketing</li><li>Community-led growth</li></ul>
+      </article>
+
+      <article class="card">
+        <div class="meta"><span class="org">High Elo Training</span><span>My book launch · games · 2013</span></div>
+        <p class="metric">437 copies in the first week</p>
+        <p class="metric-sub">1,500+ copies in total</p>
+        <p class="desc">My own book in the gaming niche, and one of the biggest wins of my career.</p>
+        <ul class="tags"><li>Launch</li><li>Gaming</li></ul>
+      </article>
+
+    </div>
+    <p class="note">R$ = Brazilian reais. Client results under "via my agency" were delivered through Mamão com Anúncio.</p>
+  </section>
+
+  <!-- ===================== 2. AI & DATA ===================== -->
+  <section class="block" id="ai">
+    <div class="section-head">
+      <div>
+        <span class="num">02 /</span>
+        <h2>AI &amp; Data Projects</h2>
+      </div>
+      <p>Systems I designed and built with Python, LLM APIs and agents. The first ones measure and improve paid media and content; the rest run my day-to-day work.</p>
+    </div>
+
+    <div class="grid">
+
+      <article class="card">
+        <div class="meta"><span class="org">Attribution &amp; Reporting Stack</span><span>Genna AI</span><span class="badge live">In production</span></div>
+        <p class="metric">Multi-touch attribution tracked in PostHog and GA4</p>
+        <p class="desc">Last-click, first-click and time-decay models tracked daily in PostHog, with GA4 alongside, to connect ad spend to activation and revenue.</p>
+        <details><summary>How it works</summary><ul>
+          <li>UTM attribution passed straight to the CRM, with Google Tag Manager for event tracking.</li>
+          <li>SQL pulls from the company database feed Redash and PostHog; Python dashboards built with AI run on my VPS.</li>
+          <li>Funnel reports flag problems with visual alerts.</li>
+        </ul></details>
+        <ul class="tags"><li>Attribution</li><li>GA4</li><li>PostHog</li><li>SQL</li><li>Python</li></ul>
+      </article>
+
+      <article class="card">
+        <div class="meta"><span class="org">Content Data Enrichment Pipeline</span><span>Genna AI</span><a class="badge repo" href="https://github.com/MartinStachera91Br/instagram-content-ml-pipeline" target="_blank" rel="noopener">Code on GitHub ↗</a></div>
+        <p class="metric">2x follower-growth speed</p>
+        <p class="metric-sub">Viral hits went from 1 to 4.2 per 30 videos</p>
+        <p class="desc">A Python pipeline that sends every Instagram post through GPT-4o and Gemini Flash, plus Whisper for transcripts, to extract <strong>62 creative features per post</strong>. Machine learning then shows which features drive performance, and those findings guide what gets produced next.</p>
+        <details><summary>How it works</summary><ul>
+          <li>484 posts processed. Features cover visuals, hook, people, audio, narrative and copy, plus 15 format-specific ones proposed by AI and curated by me.</li>
+          <li>Sources joined by Unix timestamp with a <strong>97.2% match rate</strong>.</li>
+          <li>scikit-learn modeling against 5 performance metrics, with AI output evaluation and API cost tracking.</li>
+        </ul></details>
+        <ul class="tags"><li>Creative testing</li><li>Python</li><li>LLM APIs</li><li>scikit-learn</li></ul>
+      </article>
+
+      <article class="card">
+        <div class="meta"><span class="org">Contribution-Margin Calculator</span><span>Mamão com Anúncio</span></div>
+        <p class="metric">Client churn 7.2x better than the benchmark</p>
+        <p class="metric-sub">62% of unqualified leads eliminated</p>
+        <p class="desc">A <strong>lead magnet and a lead-quality filter in one</strong>. Our ads sent prospects to the calculator, and every lead went through it to check whether the business was ready to invest in ads.</p>
+        <ul class="tags"><li>Lead magnet</li><li>Lead qualification</li><li>Unit economics</li><li>Retention</li></ul>
+      </article>
+
+      <article class="card">
+        <div class="meta"><span class="org">Agentic Content Workflow</span><span>Genna AI</span><a class="badge repo" href="https://github.com/MartinStachera91Br/reels-script-agents" target="_blank" rel="noopener">Code on GitHub ↗</a></div>
+        <p class="metric">Content from fresh news to fact revision done by AI</p>
+        <p class="desc">A chain of four agents: <strong>/research</strong> pulls fresh ideas from Reddit, news sites and X through Claude and MCP, <strong>/plan</strong> structures the piece, <strong>/script</strong> writes it and <strong>/revision</strong> checks the facts before production.</p>
+        <details><summary>How it works</summary><ul>
+          <li>Automated tests and monitoring keep the workflow running.</li>
+        </ul></details>
+        <ul class="tags"><li>Claude</li><li>MCP</li><li>AI agents</li></ul>
+      </article>
+
+      <article class="card">
+        <div class="meta"><span class="org">Context-Routing AI RAG System</span><span class="badge live">In daily use</span></div>
+        <p class="metric">15 specialized AI workstations, one router</p>
+        <p class="desc">A file-based RAG system I run on Claude. A root routing table sends each request to the right workstation, and each workstation has its own instructions, memory and reference files that load only when needed.</p>
+        <details><summary>How it works</summary><ul>
+          <li>Workstations cover job search, content production, research, personal finance, tournaments and more.</li>
+          <li>The job-search workstation keeps a <strong>master résumé as the single source of truth</strong> for every tailored CV and application.</li>
+          <li>Memory files log decisions with dates, so context carries over from one session to the next.</li>
+          <li>Started from Jeff Su's Cowork Toolkit template and extended it with my own workstations, routing rules and automations.</li>
+        </ul></details>
+        <ul class="tags"><li>Claude</li><li>MCP</li><li>RAG</li><li>Prompt design</li></ul>
+      </article>
+
+      <article class="card">
+        <div class="meta"><span class="org">Data Driven Tournament Manager for MTG</span><span class="badge live">In production</span></div>
+        <p class="metric">173 Commander decks analyzed, a 26-team league run on data</p>
+        <p class="desc">Two Streamlit apps. One runs the Taça Preconauta, a doubles Commander league I organize, and is hosted on my VPS. The other, <strong>Precon Deck Explorer</strong>, ranks and compares every official Commander precon by what its cards do.</p>
+        <details><summary>How it works</summary><ul>
+          <li>173 official precons: 13 classified by hand, 160 by a rules engine scored against the hand-checked set.</li>
+          <li>Explorer views: ranking, head-to-head, deck profile and card search.</li>
+          <li>League format: 4 groups, double round-robin, Gold and Silver playoffs seeded by win %, with bye math for uneven brackets.</li>
+        </ul></details>
+        <ul class="tags"><li>Python</li><li>Streamlit</li><li>Docker</li><li>Data modeling</li></ul>
+      </article>
+
+      <article class="card">
+        <div class="meta"><span class="org">Transcription Pipeline to Manage PII in Medical Research</span><span class="badge live">In use</span></div>
+        <p class="metric">100% offline: sensitive interviews never leave the computer</p>
+        <p class="desc">Used in my wife's master's research in healthcare to transcribe interviews with healthcare professionals, full of personal data. The research itself stays private. Transcription runs on the local GPU with faster-whisper, then a local LLM proofreads and labels speakers.</p>
+        <details><summary>How it works</summary><ul>
+          <li>Per file: raw transcript, corrected transcript with speaker labels and timestamps, and a change log.</li>
+          <li>Detects Portuguese or English automatically.</li>
+          <li>Ollama (qwen2.5:7b) for proofreading, in an isolated Python environment. Nothing is uploaded to any cloud service.</li>
+        </ul></details>
+        <ul class="tags"><li>Whisper</li><li>Ollama</li><li>Privacy</li><li>Python</li></ul>
+      </article>
+
+      <article class="card">
+        <div class="meta"><span class="org">Self-Editing Short-Form Videos with Claude</span><span>CapCut</span></div>
+        <p class="metric">Raw talking-head clip to edited vertical draft, unattended</p>
+        <p class="desc">CapCut has no API, so this edits projects by writing CapCut's own JSON draft files. It transcribes the clip with word-level timing, finds silences, cuts silences and repeated takes on word boundaries, and builds a vertical 1080×1920 draft for short-form video.</p>
+        <details><summary>How it works</summary><ul>
+          <li>Whisper for word timings, ffmpeg for silence detection.</li>
+          <li>Animated hook overlays rendered in Remotion as transparent video and placed on the timeline.</li>
+          <li>Processed a batch of 4 videos with no one at the keyboard. I only refine the final cut.</li>
+          <li>Built on an existing CapCut bridge kit from another developer. My part: adapting it to run on Windows from Claude's sandbox, the cutting rules, the batch workflow and the Remotion overlays.</li>
+        </ul></details>
+        <ul class="tags"><li>Python</li><li>Whisper</li><li>ffmpeg</li><li>Remotion</li></ul>
+      </article>
+
+      <article class="card">
+        <div class="meta"><span class="org">Agentic WordPress + Elementor Build</span><span class="badge wip">In progress</span></div>
+        <p class="metric">A client blog built by AI agents through MCP</p>
+        <p class="desc">A Portuguese-language blog for an agency client: blog home and post template built in WordPress + Elementor by AI agents through the Elementor MCP, following the client's brand guide.</p>
+        <ul class="tags"><li>WordPress</li><li>Elementor</li><li>MCP</li></ul>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="block" id="talks">
+    <div class="section-head">
+      <div><h2 style="font-size:24px">Talks &amp; press</h2></div>
+    </div>
+    <div class="also">
+      <a href="https://www.youtube.com/watch?v=WKiuKLMRtoE" target="_blank" rel="noopener"><b>AI in Digital Marketing</b><span>Lecture to 100+ founders of R$3M+ companies · 2025</span></a>
+      <a href="https://www.espn.com.br/esports/artigo/_/id/6364245/intergalaxy-tigers-clube-que-nasceu-com-dna-social-e-quer-ser-o-parana-no-circuitao" target="_blank" rel="noopener"><b>ESPN Brasil feature</b><span>eSports community and marketing work · 2019</span></a>
+    </div>
+  </section>
+
+</main>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <h2>Let's talk</h2>
+    <p>I'm open to paid media and media buying roles: Paid Media Manager, Senior Media Buyer, Performance Marketing Manager or Growth Marketing Manager. Remote from Brazil, available for US business hours.</p>
+    <div class="cta">
+      <a class="btn primary" href="mailto:martin.neto91@gmail.com">martin.neto91@gmail.com</a>
+      <a class="btn" href="https://www.linkedin.com/in/martin-stachera-growth-marketer" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn" href="https://github.com/MartinStachera91Br" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Martin Stachera</span>
+    <span>Built with HTML and CSS · Hosted on GitHub Pages</span>
+  </div>
+</footer>
+
+</body>
+</html>
